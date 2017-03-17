@@ -1,7 +1,7 @@
 # LoSM-PicDownloader
 Copyright © 2016-2017 Tangent65536 on GitHub.
 
-This is a picture downloader made for a class of mine in school.
+This is a picture downloader made for school in order to download some weather-observation-related images.
 
 This program requires Apache log4j to work properly.
 Special thanks to Apache Software Foundation for their awesome libraries!
