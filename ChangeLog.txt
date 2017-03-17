@@ -1,0 +1,17 @@
+PicDownloader for downloading images from cwb and some other government-own sites in Taiwan.
+Made by Tangent65536,
+(c) 2016 All Rights Reserved.
+
+v0.1
+ + Added 11 different data types.
+ + Add single-time and time-series downloading options.
+
+v0.2
+ - Removed redirection to unwanted data when the image doesn't exist.
+ + Better exception handling.
+ > Changed some GUI contents.
+v0.2.1
+ > Bug fix.
+
+v0.3
+ + OPEN SOURCE! Check it out here!! https://github.com/tangent65536/LoSM-PicDownloader
