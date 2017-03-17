@@ -1,7 +1,3 @@
-PicDownloader for downloading images from cwb and some other government-own sites in Taiwan.
-Made by Tangent65536,
-(c) 2016 All Rights Reserved.
-
 v0.1
  + Added 11 different data types.
  + Add single-time and time-series downloading options.
