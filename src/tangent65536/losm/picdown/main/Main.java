@@ -39,7 +39,8 @@ public class Main
 	
 	public static void main(String[] args)
 	{
-		logger.info("Picture Downloader v0.3.0 made by Tangent65536");
+		Thread.currentThread().setName("PicDownloader-init");
+		logger.info("Picture Downloader v0.3.1 made by Tangent65536");
 		logger.info("Copyright (c) 2016-2017 Tangent65536 on GitHub.");
 		DataSelectingFrame s1f = new DataSelectingFrame();
 		s1f.setVisible(true);
@@ -81,7 +82,7 @@ public class Main
 			c.add(panelBoxes, BorderLayout.NORTH);
 			c.add(panelButtons, BorderLayout.SOUTH);
 			
-			this.setSize(400, 400);
+			this.setSize(400, 500);
 			this.setResizable(false);
 			Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 			this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
@@ -228,6 +229,8 @@ public class Main
 		@Override
 		public void actionPerformed(ActionEvent arg0)
 		{
+			Thread.currentThread().setName("PicDownloader");
+			
 			try
 			{
 				int[] times = new int[blanks.length];

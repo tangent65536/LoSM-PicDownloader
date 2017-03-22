@@ -24,7 +24,11 @@ public enum EnumDownloaders
 	SFC(new DownloadSFC()),
 	SW(new DownloadSW()),
 	VEA(new DownloadVEA()),
-	VTW(new DownloadVTW());
+	VTW(new DownloadVTW()),
+	H8B03(new DownloadH8B03()),
+	H8B07(new DownloadH8B07()),
+	H8B13(new DownloadH8B13()),
+	H8NGT(new DownloadH8NGT());
 	
 	public final DownloaderBase downloader;
 	
