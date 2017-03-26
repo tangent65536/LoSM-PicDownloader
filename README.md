@@ -18,4 +18,4 @@ You're allowed to use this program and source code under Apache License 2.0 over
 
 Special Thanks List:
 
-  [] Zhen-Yen Zhang: Contributed 4 new links providing Himawari-8 satellite images.
+  + Zhen-Yen Zhang: Contributed 4 new links providing Himawari-8 satellite images.
