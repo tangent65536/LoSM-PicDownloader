@@ -13,3 +13,6 @@ v0.3
  + OPEN SOURCE! Check it out here!! https://github.com/tangent65536/LoSM-PicDownloader
 v0.3.1
  + 4 new links! Thanks Zhen-Yen Zhang for his advice!
+v0.3.2
+ > Applied new Accum.-Precip. URL from CWB.
+ 
