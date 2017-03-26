@@ -17,7 +17,7 @@ public class DownloadH8B07 extends DownloaderBase
 {
 	protected DownloadH8B07()
 	{
-		super("himawari-8 B07", "DownloadPics/Himawari8/B07", "http://www.data.jma.go.jp/mscweb/data/himawari/img/se2/se2_b07_%hh%%nn%.jpg", CommonIntervals.TEN_MINUTES.interval);
+		super("Himawari-8 B07", "DownloadPics/Himawari8/B07", "http://www.data.jma.go.jp/mscweb/data/himawari/img/se2/se2_b07_%hh%%nn%.jpg", CommonIntervals.TEN_MINUTES.interval);
 	}
 
 	@Override

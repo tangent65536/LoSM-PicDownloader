@@ -315,6 +315,8 @@ public class Main
 		@Override
 		public void actionPerformed(ActionEvent arg0)
 		{
+			Thread.currentThread().setName("PicDownloader");
+			
 			try
 			{
 				int[] timesStart = new int[blanksStart.length];

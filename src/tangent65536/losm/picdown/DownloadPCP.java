@@ -17,13 +17,13 @@ public class DownloadPCP extends DownloaderBase
 {
 	public DownloadPCP()
 	{
-		super("Daily Accmu. Precip.", "DownloadPics/Precip", "http://www.cwb.gov.tw/V7/observe/rainfall/Data/hkc%dd%%hh%%n%.jpg", CommonIntervals.THIRTY_MINUTES.interval);
+		super("Daily Accmu. Precip.", "DownloadPics/Precip", "http://www.cwb.gov.tw/V7/observe/rainfall/Data/hk%m%%dd%%hh%%n%.jpg", CommonIntervals.THIRTY_MINUTES.interval);
 	}
 	
 	@Override
 	protected String getURL(final DateTime time)
 	{
-		return time.encode(this.urlBase).replaceAll("%n%", String.format("%01d", time.minute / 10));
+		return time.encode(this.urlBase).replaceAll("%n%", String.format("%01d", time.minute / 10)).replaceAll("%m%", String.valueOf(time.month));
 	}
 
 	protected DateTime fixStart(DateTime start)

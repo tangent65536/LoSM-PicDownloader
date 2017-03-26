@@ -17,7 +17,7 @@ public class DownloadH8NGT extends DownloaderBase
 {
 	protected DownloadH8NGT()
 	{
-		super("himawari-8 Night Microphysics RCB", "DownloadPics/Himawari8/NMRCB", "http://www.data.jma.go.jp/mscweb/data/himawari/img/se2/se2_ngt_%hh%%nn%.jpg", CommonIntervals.TEN_MINUTES.interval);
+		super("Himawari-8 Night Microphysics RCB", "DownloadPics/Himawari8/NMRCB", "http://www.data.jma.go.jp/mscweb/data/himawari/img/se2/se2_ngt_%hh%%nn%.jpg", CommonIntervals.TEN_MINUTES.interval);
 	}
 
 	@Override
