@@ -15,4 +15,6 @@ v0.3.1
  + 4 new links! Thanks Zhen-Yen Zhang for his advice!
 v0.3.2
  > Applied new Accum.-Precip. URL from CWB.
- 
+v0.3.3
+ > Updated Accum.-Precip. URL again from CWB.
+ + Himawari True Color images available on CWB website.
