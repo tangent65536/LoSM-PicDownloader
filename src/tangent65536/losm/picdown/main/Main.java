@@ -40,8 +40,20 @@ public class Main
 	public static void main(String[] args)
 	{
 		Thread.currentThread().setName("PicDownloader-init");
-		logger.info("Picture Downloader v0.3.1 made by Tangent65536");
-		logger.info("Copyright (c) 2016-2017 Tangent65536 on GitHub.");
+		String[] credits = new String[]{
+			"+------------------------------------------------------+",
+			"|                                                      |",
+			"|           [CWB Image Downloader ver.0.3.3]           |",
+			"|         Copyright (c) 2016-2017 Tangent65536         |",
+			"|  https://github.com/tangent65536/LoSM-PicDownloader  |",
+			"|                                                      |",
+			"+------------------------------------------------------+",
+			"",
+		};
+		for(String s : credits)
+		{
+			logger.info(s);
+		}
 		DataSelectingFrame s1f = new DataSelectingFrame();
 		s1f.setVisible(true);
 	}
@@ -82,7 +94,7 @@ public class Main
 			c.add(panelBoxes, BorderLayout.NORTH);
 			c.add(panelButtons, BorderLayout.SOUTH);
 			
-			this.setSize(400, 500);
+			this.setSize(400, 560);
 			this.setResizable(false);
 			Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 			this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);

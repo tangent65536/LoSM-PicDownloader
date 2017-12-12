@@ -13,6 +13,14 @@ import tangent65536.losm.picdown.util.DateTime;
 
 public enum CommonIntervals
 {
+	FIVE_MINUTES(0, 0, 0, 0, 5)
+	{
+		public DateTime alignToInterval(DateTime shifted)
+		{
+			int left = shifted.minute % this.interval.minute;
+			return left != 0 ? shifted.getNext(new Interval(0, 0, 0, 0, this.interval.minute - left)) : shifted;
+		}
+	},
 	TEN_MINUTES(0, 0, 0, 0, 10)
 	{
 		public DateTime alignToInterval(DateTime shifted)

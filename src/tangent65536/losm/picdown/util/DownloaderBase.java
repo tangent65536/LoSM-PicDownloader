@@ -91,7 +91,7 @@ public abstract class DownloaderBase
 			}
 			else
 			{
-				logger.error("Unable to download " + fileName + "! Is it deleted?");
+				logger.error("<" + this.name + "> Unable to download " + fileName + "! Is it deleted?");
 			}
 		}
 		catch(Exception e)

@@ -13,21 +13,16 @@ import tangent65536.losm.picdown.util.CommonIntervals;
 import tangent65536.losm.picdown.util.DateTime;
 import tangent65536.losm.picdown.util.DownloaderBase;
 
-public class DownloadPCP extends DownloaderBase
+public class DownloadRJP extends DownloaderBase
 {
-	public DownloadPCP()
+	public DownloadRJP()
 	{
-		super("Daily Accmu. Precip.", "DownloadPics/Precip", "http://www.cwb.gov.tw/V7e/observe/rainfall/Data/%yyyy%-%mm%-%dd%_%hh%%nn%.EZJ.grd2.jpg", CommonIntervals.THIRTY_MINUTES.interval);
-	}
-	
-	@Override
-	protected String getURL(final DateTime time)
-	{
-		return time.encode(this.urlBase).replaceAll("%n%", String.format("%01d", time.minute / 10)).replaceAll("%m%", String.valueOf(time.month));
+		super("Radar Japan", "DownloadPics/Radar/Japan", "http://www.jma.go.jp/jp/radnowc/imgs/radar/000/%yyyy%%mm%%dd%%hh%%nn%-00.png", CommonIntervals.FIVE_MINUTES.interval);
 	}
 
+	@Override
 	protected DateTime fixStart(DateTime start)
 	{
-		return CommonIntervals.THIRTY_MINUTES.alignToInterval(start);
+		return CommonIntervals.FIVE_MINUTES.alignToInterval(start);
 	}
 }

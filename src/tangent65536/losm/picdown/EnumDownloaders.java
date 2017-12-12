@@ -13,6 +13,8 @@ import tangent65536.losm.picdown.util.DownloaderBase;
 
 public enum EnumDownloaders
 {
+	VTCEA(new DownloadVTCEA()),
+	VTCTW(new DownloadVTCTW()),
 	FREA02(new DownloadFREA02()),
 	IREA(new DownloadIREA()),
 	IRTW(new DownloadIRTW()),
@@ -28,7 +30,8 @@ public enum EnumDownloaders
 	H8B03(new DownloadH8B03()),
 	H8B07(new DownloadH8B07()),
 	H8B13(new DownloadH8B13()),
-	H8NGT(new DownloadH8NGT());
+	H8NGT(new DownloadH8NGT()),
+	RJP(new DownloadRJP());
 	
 	public final DownloaderBase downloader;
 	
